@@ -11,5 +11,4 @@ class ImageCoder(var mode: String = "enc", var password: String = "00000000") {
 //            }
 //        }
 //       return image
-    }
 }
