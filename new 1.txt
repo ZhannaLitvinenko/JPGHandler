@@ -1,0 +1,12 @@
+/? - help
+
+!path - the way where picture is
+!enc [password] - to encode picture
+!dec [password] - to decode picture
+
+1.Менюшка
+2.Зчитую команди:
+а) шлях:
+  - шукаю всі зображення за цим шляхом і записую в ліст
+б) режим і циклом кодую елементи ліста
+в) режим і циклом декодую елементи ліста
