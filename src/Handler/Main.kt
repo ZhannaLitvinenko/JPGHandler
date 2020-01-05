@@ -21,7 +21,7 @@ fun printResultInfo(codeResult: CodeResult){
     })
 }
 fun menu(){
-    var pictures = mutableListOf<BufferedImage>()
+    var pictures = mutableListOf<File>()
     var changedPictures = mutableListOf<BufferedImage>()
     var path: String = ""
     println("/? - help")
@@ -32,7 +32,7 @@ fun menu(){
             "/path" -> {
                 path = input[1]
                 Runtime.getRuntime().exec("cmd /c cd directory check\\ && start findImg.bat \"${path}\"")
-                File("directory check\\file.txt").forEachLine { pictures.add(ImageIO.read(File("${path}\\${it}"))) }
+                File("directory check\\file.txt").forEachLine { pictures.add(File("${path}\\${it}")) }
             }
             "/enc" -> {
                 var coder = ImageCoder("enc", input[1])

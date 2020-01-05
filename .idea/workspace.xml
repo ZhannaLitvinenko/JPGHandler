@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="88f1cd93-33bd-449a-830f-4300d4cbe7da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/directory check/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/directory check/file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/directory check/findImg.bat" beforeDir="false" afterPath="$PROJECT_DIR$/directory check/findImg.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JPGHandler/Handler/ImageCoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPGHandler/Handler/ImageCoder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JPGHandler/Handler/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPGHandler/Handler/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handler/CodeResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/CodeResult.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handler/ImageCoder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/ImageCoder.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Handler/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
