@@ -22,7 +22,7 @@ fun printResultInfo(codeResult: CodeResult){
 }
 fun menu(){
     var pictures = mutableListOf<File>()
-    var changedPictures = mutableListOf<BufferedImage>()
+    var changedPictures = mutableListOf<ByteArray>()
     var path: String = ""
     println("/? - help")
     while(true){
@@ -37,20 +37,20 @@ fun menu(){
             "/enc" -> {
                 var coder = ImageCoder("enc", input[1])
                 var result = coder.code(pictures) //list of coded images and result
-                changedPictures = result[0]
+                changedPictures = result[0] as MutableList<ByteArray>
                 for(i in changedPictures.indices){
-                    File(path).writeBytes(changedPictures[i] as ByteArray)
+                    File(pictures[i].path).writeBytes(changedPictures[i] as ByteArray)
                 }
-                printResultInfo(result[1])
+                printResultInfo(result[1] as CodeResult)
             }
             "/dec"-> {
                 var decoder = ImageCoder("dec", input[1])
                 var result = decoder.code(pictures)
-                changedPictures = result[0]
+                changedPictures = result[0] as MutableList<ByteArray>
                 for(i in changedPictures.indices){
-                    File(path).writeBytes(changedPictures[i] as ByteArray)
+                    File(pictures[i].path).writeBytes(changedPictures[i] as ByteArray)
                 }
-                printResultInfo(result[1])
+                printResultInfo(result[1] as CodeResult)
             }
             "/ex" -> return
             else -> {
